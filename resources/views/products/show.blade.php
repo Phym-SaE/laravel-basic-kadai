@@ -29,6 +29,13 @@
                 <th>更新日時</th>
                 <td>{{ $product->updated_at }}</td>
             </tr>
+            <tr>
+                <th>画像</th>
+                <td>
+                    <img src="{{ asset('/storage/products/' . $product->image_name) }}" style="width: 50vw"
+                        alt="アップロードした画像ファイル" />
+                </td>
+            </tr>
         </table>
     </body>
 
